@@ -32,7 +32,10 @@ contract ValidationRenewalAllowanceSM is BaseTest {
 
     /// @dev Deploys a payload and uses it on a new proposal
     function testProposalPrePayload() public {
-        _testProposal(address(new AllowanceRenewalSMPayload()));
+        // Uncomment to test with non-deployed payload (and comment following)
+        //_testProposal(address(new AllowanceRenewalSMPayload()));
+
+        _testProposal(0x83Fba23163662149B33DBC05cF1312DF6dcBA72b);
     }
 
     function _testProposal(address payload) internal {

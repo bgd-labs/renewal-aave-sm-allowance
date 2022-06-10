@@ -7,7 +7,7 @@ update:; forge update
 
 # Build & test
 build  :; forge build --force
-test   :; forge test -vvv --rpc-url=${ETH_RPC_URL} --fork-block-number 14933680
-trace   :; forge test -vvvv --rpc-url=${ETH_RPC_URL} --fork-block-number 14933680
+test   :; forge test -vvv --rpc-url=${ETH_RPC_URL} --fork-block-number 14938924
+trace   :; forge test -vvvv --rpc-url=${ETH_RPC_URL} --fork-block-number 14938924
 clean  :; forge clean
 snapshot :; forge snapshot
